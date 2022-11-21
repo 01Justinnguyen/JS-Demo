@@ -1,0 +1,19 @@
+let people = ['Phuc', 'Ngoc', 'Duy', 'Khanh'];
+let nums = [1,4,8,0, 100, 12];
+//Làm việc với mảng
+// console.log(people.toString()) //chuyển mảng thành chuỗi
+// console.log(people.join(" , ")); //chuyển mảng thành chuỗi nhưng có thể chèn vào từng phần tử
+// console.log(people.pop()); //Xóa phần tử cuối mảng và trả về phần tử đã xóa, nếu xóa hết nữa thì trả về undifined
+// console.log(people.shift()); //Xóa phần tử đầu mảng và trả về phần tử đã xóa
+// delete people[0]; //Xóa phần tử trong mảng nhưng không xóa ô nhớ và để lại kết quả undefined 
+// console.log(people.push("Kiwi", "Whale", 0 , 1, [], {}, undefined)); //Thêm một hoặc phần tử vào cuối mảng và trả về độ dài của mảng mới
+// people[people.length] = 'kiwi'; //Nối 1 phần tử mới vào cuối mảng - tương đương với thêm 1 phần tử cuối mảng
+// console.log(people.unshift("Kiwi", "Whale", 0 , 1, [], {}, undefined));  //Thêm một phần tử vào đầu mảng và trả về độ dài của mảng mới
+// people[0] = 'kiwi'; thay thế dữ liệu của phần tử thứ 0
+// concat(): Nối mảng này với mảng kia và có thể nối nhiều mảng hoặc có thể nối với 1 đối số: Example: const myChildren = arr1.concat(arr2, arr3); + const myChildren = arr1.concat("Kiwi"); 
+// people.splice(2, 0, "Kiwi", "Whale", 0 , 1, [], {}, undefined); : Dùng để thêm các phần tử vào một mảng hoặc xóa phần tử nhưng lưu ý: có 3 tham số chính được truyền vào: Tham số 1: Vị trí thêm, Tham số thứ 2: Xác định số phần tử muốn loại bỏ, Tham số 3: Các phần tử muốn thêm vào - phải truyền đầy đủ các tham số - trả về các phần tử bị remove
+// console.log(people.slice(0)):  cắt thành một mảng mới - không làm thay đổi giá trị ban đầu của mảng; - có 2 tham số: Tham số 1: vị trí bắt đầu cắt, Tham số 2: vị trí cuối cắt
+// console.log(people.sort());  Sắp xếp mảng theo alphaB
+// console.log(people.reverse()): đảo ngược mảng
+// console.log(nums.sort(function(a, b){return b-a})) //Thủ thuật sắp xếp mảng số giảm dần
+// console.log(nums.sort(function(a, b){return a-b})) //Thủ thuật sắp xếp mảng số tăng dần

@@ -1,0 +1,6 @@
++ Hàm built-in
+setTimeout(): chỉ thực thi một lần
+setInterval(): thực thi như một vòng lặp
+
++ Hàm tự định nghĩa
+Được thực thi khi được gọi

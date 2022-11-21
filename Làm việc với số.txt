@@ -1,0 +1,8 @@
+// let number1 = 192.168; 
+// console.log(isNaN(20/1)); //Kiểm tra không hợp lệ
+// console.log(Number.isFinite(20/5)) /*->Kiểm tra số hữu hạn*/
+// console.log(Number.isInteger(20/5)) //Kiểm tra số nguyên
+// console.log(Number.parseFloat('18 is my age')); //Chuyển đỗi chuỗi thành một dấu phẩy động
+// console.log(Number.parseInt('18 is my age')); //Chuyển đỗi chuỗi thành một số nguyên
+// console.log(number1.toFixed(2)); //trả về chuỗi chính xác 2 số thập phân
+// console.log(number1.toString()); //chuyển đổi số về chuỗi
