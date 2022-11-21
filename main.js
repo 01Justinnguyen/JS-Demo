@@ -490,38 +490,32 @@ function calculateRating(obj) {
 }
 //   console.log(calculateRating(watchList)); // Output: 8.675
  
-function arrToObj(arr) {
-    let results = arr.reduce(function(rs, value) {
-        return value;
-    }, {});
-    return results;
-}
+// function arrToObj(arr) {
+//     let results = arr.reduce(function(rs, value) {
+//         return value;
+//     }, {});
+//     return results;
+// }
  
-// Expected results:
-var array = [
-    ['name', 'Sơn Đặng'],
-    ['age', 18],
-];
+// // Expected results:
+// var array = [
+//     ['name', 'Sơn Đặng'],
+//     ['age', 18],
+// ];
 // console.log(arrToObj(array)); // { name: 'Sơn Đặng', age: 18 }
 
 //Chuỗi, hàm, mảng, object các methods quan trọng
 
 /*Làm việc với object*/
-Array.prototype.reduce2 = function(callback, result) {
-    let i=0;
-    if(arguments.length < 2) {
-        i = 1;
-        result = this[0]
-    }
-    for(;i<this.length;i++) {
-        result = callback(result, this[i], i, this)
-    }
-    return result;
+function arrToObj(array1) {
+    let results = array1.reduce(function(obj, value) {
+        obj[value[0]] = value[1];
+        return obj;
+    }, {});
+    return results;
 }
-const numbers = [1,2,3,4,5];
+var array= [
+    ['name', 'Sơn Đặng'],
+    ['age', 18],
+]; console.log(arrToObj(array)); // { name: 'Sơn Đặng', age: 18 }
 
-const Result = numbers.reduce2((total, number) => {
-    return total + number
-}, 10)
-
-console.log(Result);
